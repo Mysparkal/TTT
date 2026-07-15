@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{margin: 0; padding: 0; font-family: 'Bebas Neue', cursive; box-sizing: border-box;}
+nav{
+    background-color: rgb(18, 87, 87);
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    color: rgb(151, 226, 76);
+    box-shadow: 2px 4px 10px black;
+    position: sticky;
+    margin-bottom: 10vh;
+}
+body{
+    background: rgb(23, 99, 99);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.myName{
+    font-size: 1.8rem;
+    letter-spacing: 0.3rem;
+}
+.game{
+    display: grid;
+    grid-template-columns: repeat(3 , 12vw);
+    grid-template-rows: repeat(3 , 12vw);
+    font-size: 12vw;
+}
+.info{
+    width: 30vw;
+    margin-left: 5vw;
+}
+.boxText{
+    color: rgb(151, 226, 76);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxText:hover{
+    background-color: rgba(185, 238, 132, 0.11);
+}
+.info h1{
+    font-size: 2.5vw;
+    color: rgb(151, 226, 76);
+    font-family: 'PT Sans', sans-serif;
+}
+.info p{
+    font-size: 1.5vw;
+    color: rgb(151, 226, 76);
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 2vh;
+}
+.info button{
+    font-size: 2vw;
+    border: none;
+    border-radius: 15px 15px 15px 15px;
+    height: 7vh;
+    width: 9vw;
+    letter-spacing: 0.5rem;
+    background: rgb(10, 58, 58);
+    color: rgb(151, 226, 76);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px black;
+    margin-top: 3vh;
+}
+#display{
+    font-size: 3vw;
+}
+.b-t{
+    border-top:2px dashed white;
+}
+.b-r{
+    border-right: 2px dashed white;
+}
+.b-b{
+    border-bottom: 2px dashed white;
+}
+.b-l{
+    border-left: 2px dashed white;
+}
+
+@media screen and (max-width:768px)
+{
+    .info button{
+        font-size: 15px;
+        height: 35px;
+        width: 80px;
+    }
+    nav{
+        background-color: rgb(18, 87, 87);
+        width: 100vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        letter-spacing: 0.3rem;
+        color: rgb(151, 226, 76);
+        box-shadow: 2px 4px 10px black;
+        position: sticky;
+        margin-bottom: 10vh;
+    }
+    .myName{
+        font-size: 1.2rem;
+        letter-spacing: 0.15rem;
+    }
+    .game{
+        display: grid;
+        grid-template-columns: repeat(3 , 15vw);
+        grid-template-rows: repeat(3 , 15vw);
+        font-size: 12vw;
+    }
+}
+@media screen and (max-width:425px)
+{
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .info button{
+        letter-spacing: 3.5px;
+        font-size: 15px;
+        height: 30px;
+        width: 60px;
+        margin-top: 5px;
+    }
+    .game{
+        display: grid;
+        grid-template-columns: repeat(3 , 30vw);
+        grid-template-rows: repeat(3 , 30vw);
+        font-size: 25vw;
+    }
+    .info{
+        width: 70vw;
+        margin-left: 5vw;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    nav{
+        background-color: rgb(18, 87, 87);
+        width: 100vw;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        letter-spacing: 0.2rem;
+        color: rgb(151, 226, 76);
+        box-shadow: 2px 4px 10px black;
+        position: sticky;
+        margin-bottom: 10vh;
+    }
+    .myName{
+        font-size: 1rem;
+        letter-spacing: 0.10rem;
+    }
+    .info h1{
+        font-size: 20px;
+    }
+    #display{
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .boxText{
+        color: rgb(151, 226, 76);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:320px)
+{
+    .game{
+        display: grid;
+        grid-template-columns: repeat(3 , 25vw);
+        grid-template-rows: repeat(3 , 25vw);
+        font-size: 22vw;
+    }
+}
